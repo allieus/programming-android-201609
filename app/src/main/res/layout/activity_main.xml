@@ -1,17 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/app"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="kr.festi.simplecalculator.MainActivity">
+    app:columnCount="4"
+    app:rowCount="5">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:id="@+id/resultTextView"
+        app:layout_columnSpan="4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="end|bottom"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:text="result" />
+
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="7" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="8" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="9" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:gravity="center"
+        android:background="#f87d13"
+        android:text="/" />
+
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="4" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="5" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="6" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#f87d13"
+        android:text="*" />
+
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="1" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="2" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="3" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#f87d13"
+        android:text="-" />
+
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        app:layout_columnSpan="2"
+        android:gravity="center"
+        android:background="#cbccd0"
+        android:text="0" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#f87d13"
+        android:text="=" />
+    <Button
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        android:gravity="center"
+        android:background="#f87d13"
+        android:text="+" />
+
+</android.support.v7.widget.GridLayout>
